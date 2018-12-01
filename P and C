@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    printf("%d\n%d\n%d\n%d%d\n%d%d\n%d%d\n%d%d\n%d%d\n%d%d\n%d%d\n%d%d\n%d%d",a,b,c,a,a,a,b,a,c,b,a,b,b,b,c,c,a,c,b,c,c);
+    
+    // Insert your code here
+    
+    return 0;
+}
