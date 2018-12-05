@@ -1,13 +1,11 @@
 #include<stdio.h>
 #include<string.h>
-int main()
-{
+int main(){
     char str[200];
     gets(str);
     int i,l=strlen(str),c,d,j,f,g,a,b,p,q,h;
     for(i=l/2-1;i>=0;i--){
-        a=0;
-        b=0;
+        a=0,b=0;
         for(j=1;j<=i;j++){
             if(str[i+j]==str[i-j])a++;
             if(str[i+j-1]==str[i-j])b++;
@@ -24,8 +22,7 @@ int main()
         }
     }
     for(i=l/2;i<l;i++){
-        c=0;
-        d=0;
+        c=0,d=0;
         for(j=1;j<l-i;j++){
             if(str[i+j-1]==str[i-j])d++;
             if(str[i+j]==str[i-j])c++;
@@ -68,7 +65,6 @@ int main()
             else h=4;
         }
     }
-    //printf("%d ",h);
     if(h==1){
         printf("%d\n",2*q);
         for(j=0;j<2*q;j++){
@@ -98,8 +94,5 @@ int main()
             else printf("%c",str[l-(2*(l-p)-1-j)-1]);
         }
     }
-    
-    //  Insert your code here.
-    
     return 0;
 }
