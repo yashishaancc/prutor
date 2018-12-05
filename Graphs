@@ -37,7 +37,10 @@ int main()
             R=i;
         }
     }
-    printf("%d NODES SENT NO MESSAGES\n%d NODES RECEIVED NO MESSAGES\nMAX %d MESSAGES SENT BY NODE %d\nMAX %d MESSAGES RECEIVED BY NODE %d",p,q,max,r,Max,R);
+    printf("%d NODES SENT NO MESSAGES\n",p);
+    printf("%d NODES RECEIVED NO MESSAGES\n",q);
+    printf("MAX %d MESSAGES SENT BY NODE %d\n",max,r);
+    printf("MAX %d MESSAGES RECEIVED BY NODE %d",Max,R);
     
     //  Insert your code here.
     
