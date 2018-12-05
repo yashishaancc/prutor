@@ -44,72 +44,11 @@ void color(int n,char str[n][n],int c,int ro,int co){
 
 int main()
 {
-    int n,c,i,j;
+    int n,c;
     scanf("%d%d",&n,&c);
-    int a[n][n];
     char str[n][n];
-    if(c==1||n==1)printf("0");
-    else if(c==2){
-        if(n%2)printf("0");
-        else{
-            for(i=0;i<n;i++){
-                for(j=0;j<n;j++){
-                    if((j%2==0&&i%2==1)||(j%2==1&&i%2==0))printf("2");
-                    else printf("1");
-                }
-            }
-            printf("\n");
-            for(i=0;i<n;i++){
-                for(j=0;j<n;j++){
-                    if((j%2==0&&i%2==1)||(j%2==1&&i%2==0))printf("1");
-                    else printf("2");
-                }
-            }
-            printf("\n2");
-        }
-    }
-    else if(c==3&&n==3){
-        if(n==2){
-            printf("1221\n");
-            printf("1223\n");
-            printf("1231\n");
-            printf("1321\n");
-            printf("1332\n");
-            printf("1331\n");
-            printf("2112\n");
-            printf("2113\n");
-            printf("2132\n");
-            printf("2312\n");
-            printf("2331\n");
-            printf("2332\n");
-            printf("3112\n");
-            printf("3113\n");
-            printf("3123\n");
-            printf("3213\n");
-            printf("3221\n");
-            printf("3223\n");
-            printf("18");
-        }
-        if(n==3){
-            printf("123231312\n");
-            printf("123312231\n");
-            printf("132213321\n");
-            printf("132321213\n");
-            printf("213132321\n");
-            printf("213321132\n");
-            printf("231123312\n");
-            printf("231312123\n");
-            printf("312123231\n");
-            printf("312231123\n");
-            printf("321132213\n");
-            printf("321213132\n");
-            printf("12");
-        }
-    }
-    else{
-        color(n,str,c,0,0);
-        printf("%d",count);
-    }
+    color(n,str,c,0,0);
+    printf("%d",count);
     
     //  Insert your code here.
     
